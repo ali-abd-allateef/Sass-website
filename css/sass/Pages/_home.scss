@@ -1,0 +1,329 @@
+/* Start Slider */
+.slider{
+    p{
+        font:{
+            size: 18px;
+            style:italic;
+            family:tahoma;
+
+        }
+    
+        text-align: center;
+        line-height: 1.7;
+        width: 70%;
+        margin: 30px auto;
+        color: $greyColor;
+    }
+.avatar{
+        @media #{$minSmall}{
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+        }
+        
+        @media #{$minMedium}{
+            width: 100%;
+            height: 450px;
+            }
+            
+            @media #{$minLarg}{
+            width: 100%;
+            height: 450px;
+            }
+            
+            @media #{$maxMobile}{
+            max-width: 100%;
+            width: 100%;
+            height: 250px;
+            }
+    }
+    .bull{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 15px;
+            height:15px;
+            background-color: #d1d1d1;
+            border-radius: 50%;
+            border: 2px solid #d1d1d1;
+            cursor: pointer;
+            &.active ,
+            &:hover{
+                background-color: #FFF;
+                border: 2px solid #1f1616;
+            }
+        }
+
+    }
+}
+/* End Slider */
+
+/* Start Feature */
+
+.feature{
+    padding: 10px 0 ;
+    overflow: hidden;
+
+ .feat{
+        float: $float-left;
+        padding: 0 20px 0 0 ;
+        margin-bottom: 20px;
+
+        h2{
+            color: $mainColor;
+            margin: 8px 0 8px;
+        }
+        p{
+            color: $greyColor;
+            line-height: 1.5;
+            margin: 0;
+        }
+        @media #{$minSmall} {
+            width: 100%;
+        
+        }
+        
+        @media #{$minMedium}{
+                width: 33.3%;
+        } 
+        
+        @media #{$maxMobile}{
+                width: 100%;
+        }
+
+    }
+}
+
+
+
+/* End Features*/
+
+
+/* Start Services */
+.services{
+    .services-box{
+        
+        color: $greyColor;
+        @media #{$maxMobile} {
+            width: 100%;
+            i{
+                display: block;
+                float: none;
+                padding-bottom: 5px;
+            }
+        }
+        @media #{$minSmall}{
+            float: $float-left;
+            width: calc(100% / 2);
+            padding-right: 20px;
+        }
+        @media #{$minMedium}{
+            float: $float-left;
+            width: calc(100% / 3);
+            padding-right: 20px;
+        }
+     .services-title{
+        i{
+            font-size: 35px;
+            position: relative;
+            top: 3px;
+            margin-right: 5px;
+        }
+    }
+     .services-desc{
+        color: $greyColor;
+    }
+    .link{
+        text-decoration: none;
+        color: $mainColor;
+    }
+}
+}
+
+/* End Services */
+
+/* Start Our Playar */
+.players{
+    .players-box{
+       
+        color: $greyColor;
+        @media #{$minSmall}{
+            float: $float-left;
+            width: calc(100% / 2);
+            text-align: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        @media #{$minMedium}{
+            width:calc(100% / 4);
+            text-align: $text-left;
+        }
+        @media #{$minLarg}{
+            width: calc(100% / 4);
+            margin-bottom: 10px;
+        }
+        @media #{$maxMobile}{
+            width: 100%;
+            margin-bottom: 30px;
+           
+        }
+        .avatar{
+            max-width: 100%;
+            width: 200px;
+            height: 150px;
+        }
+     .players-title{
+         font-weight: normal;
+        span{
+            font-weight: bold;
+        }
+    }   
+     .players-desc{
+        color: $greyColor;
+    }
+    .link{
+        text-decoration: none;
+        color: $mainColor;
+    }
+
+}
+}
+/* End Our Playar */
+
+/* Start About Us */
+.about{
+    .about-desc{
+        margin: 15px 0;
+        p{
+            color: $greyColor;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
+    .about-box{
+    float: $float-left;
+    width: calc(94%/3);
+    &:not(:last-of-type){
+        margin-right: 3%;
+    }
+    .avatar{
+        max-width: 100%;
+    }
+
+}
+
+}
+/* End About Us */
+
+/* Start What They Say */
+.they-say{
+   .person-say{
+       background-color: #f1d7d7;
+       padding: 0px 20px;
+       margin:0 0 20px;
+       border: 1px solid #EEE;
+       border-radius: 10px;
+       @media #{$minSmall}{
+        float: $float-left;
+        width: 100%;
+        .avatar{
+            float: $float-left;
+        }
+        h3{
+            float: $float-left;
+        }
+        p{
+            width: calc(100% - 120px);
+            float:$float-left;
+        }
+       }
+       @media #{$maxMobile}{
+       width: 100%;
+       .avatar{
+        float: none;
+        margin-left: 43%;
+       }
+       h3{
+        float: none;
+        text-align: center;
+        margin-top: 5px;
+       }
+       p{
+        float: none;
+        width: 100%;
+        
+       }
+        
+       } 
+    
+        .avatar{
+            margin-top: 5px;
+            margin-right: 20px;
+           
+            .img-thumble{
+                height: 100px;
+                width: 100px;
+                border-radius: 25px;
+            }
+            
+          
+        }
+        h3{
+            margin:18px 0 10px;
+        }
+        p{
+            margin: 0px;
+            margin-bottom: 5px;
+            
+        
+        }
+        
+    }
+      
+}
+
+/* End What They Say */
+
+/* Start Information */
+
+.information{
+   
+    padding: 30px 0;
+}
+
+.information .list-info{
+    margin:20px 0 0;
+}
+.information .list-info li{
+    display: inline-block;
+    background-color: #DDD;
+    padding: 15px;
+    font-size: 22px;
+    color: #254b4c;
+    cursor: pointer;
+}
+.information .list-info li.selected{
+    background-color: #FFF;
+    font-weight: bold;
+}
+.information .Tap-info >div{
+    font-size: 18px;
+    padding: 8px;
+    background-color: #FFF;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.information .Tap-info >div:not(:first-of-type){
+    display: none;
+}
+
+@media (max-width:767px){
+.information .list-info li{
+    display: block;
+}
+}
+
+/* End Information */
+

@@ -1,0 +1,29 @@
+*{
+    @include prefixer(box-sizing , border-box);
+}
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media #{$minSmall}{
+        width: 600px;
+    }
+    @media #{$minMedium}{
+        width: 800px;
+    }
+    @media #{$minLarg}{
+        width: 1000px;
+    }
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.text-center{
+    @media #{$maxMobile}{
+        text-align: center;
+    }
+}
